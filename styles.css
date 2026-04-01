@@ -484,15 +484,15 @@ ol {
 .services-grid {
     display: grid;
     grid-template-columns: 1.25fr 1fr 1fr;
-    grid-template-rows: 330px 330px;
-    gap: 24px;
+    grid-template-rows: clamp(250px, 28vw, 300px) clamp(250px, 28vw, 300px);
+    gap: 20px;
 }
 
 .service-card {
     position: relative;
     overflow: hidden;
     border-radius: var(--radius-lg);
-    min-height: 330px;
+    min-height: clamp(250px, 28vw, 300px);
     background: #d9d1c6;
     box-shadow: var(--shadow-md);
     isolation: isolate;
